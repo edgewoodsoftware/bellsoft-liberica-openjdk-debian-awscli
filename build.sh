@@ -16,7 +16,7 @@ for TAG in "${TAGS[@]}"; do
   docker buildx build \
     --push \
     --platform linux/arm64/v8,linux/amd64 \
-    --build-arg LIBERICA_TAG="$TAG" \
     --tag "edgewoodsoftware/bellsoft-liberica-openjdk-debian-awscli:$TAG" \
+    --build-arg LIBERICA_TAG="$TAG" \
     .
 done
