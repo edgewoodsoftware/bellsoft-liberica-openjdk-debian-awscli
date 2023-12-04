@@ -1,4 +1,4 @@
-FROM bellsoft/liberica-openjdk-debian:21.0.1
+FROM bellsoft/liberica-openjdk-debian:${LIBERICA_TAG}
 
 RUN apt update && \
     apt install --no-install-recommends -y curl unzip groff docker.io && \
